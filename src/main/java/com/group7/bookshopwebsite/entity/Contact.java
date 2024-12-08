@@ -1,0 +1,31 @@
+package com.group7.bookshopwebsite.entity;
+
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.io.Serializable;
+import java.util.Date;
+
+@Getter
+@Setter
+@Entity
+@Table(name = "contacts")
+public class Contact extends AbstractBase {
+
+
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "subject")
+    private String subject;
+
+    @Lob
+    @Column(name = "message")
+    private String message;
+
+}
