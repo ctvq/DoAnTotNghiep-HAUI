@@ -5,7 +5,7 @@
 
 ## Giới thiệu
 
-Đây là ứng dụng WEBSITE BÁN SÁCH TIẾNG NHẬT CHO CỬA HÀNG SÁCH ROOK BOOKSTORE được xây dựng bằng **Spring Boot**, sử dụng **Thymeleaf** để hiển thị giao diện, **MySQL** làm cơ sở dữ liệu, và **WebSocket** để thực hiện giao tiếp thời gian thực.
+Đây là ứng dụng WEBSITE BÁN SÁCH TIẾNG NHẬT CHO CỬA HÀNG SÁCH BOOKSTORE được xây dựng bằng **Spring Boot**, sử dụng **Thymeleaf** để hiển thị giao diện, **MySQL** làm cơ sở dữ liệu, và **WebSocket** để thực hiện giao tiếp thời gian thực.
 
 ## Yêu cầu hệ thống
 
