@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <title>Rook Book Store</title>
+    <title>Cua hang sach Book Store</title>
     <meta content="" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
@@ -249,7 +249,6 @@
                                         <h4><a href="single-product.html" th:text="${book.title}"></a></h4>
                                         <ul class="prize d-flex">
                                             <li th:text="${#numbers.formatDecimal(__${(book.salePrice)}__, 0, 'POINT', 0, 'POINT')} + ' VND'"></li>
-                                            <li class="old_prize" th:text="${#numbers.formatDecimal(__${(book.originalPrice)}__, 0, 'POINT', 0, 'POINT')} + ' VND'"></li>
                                         </ul>
                                         <div class="action">
                                             <div class="actions_inner">
@@ -304,7 +303,6 @@
                                         </ul>
                                         <ul class="prize__box">
                                             <li th:text="${#numbers.formatDecimal(__${(book.salePrice)}__, 0, 'POINT', 0, 'POINT')} + ' VND'"></li>
-                                            <li class="old__prize" th:text="${#numbers.formatDecimal(__${(book.originalPrice)}__, 0, 'POINT', 0, 'POINT')} + ' VND'"></li>
                                         </ul>
                                         <p th:text="${book.description}"></p>
                                         <ul class="cart__action d-flex">
@@ -370,7 +368,6 @@
                                 <div class="price-box-3">
                                     <div class="s-price-box">
                                         <span class="new-price" id="modal-book-sale-price"></span>
-                                        <span class="old-price" id="modal-book-original-price"></span>
                                     </div>
                                 </div>
                                 <div class="quick-desc" id="modal-book-description">
@@ -500,7 +497,6 @@
                 $('#modal-book-img').attr('src', res.data.coverImage);
                 $('#modal-book-title').text(res.data.title);
                 $('#modal-book-sale-price').text(res.data.salePrice);
-                $('#modal-book-original-price').text(res.data.originalPrice);
                 $('#modal-book-description').text(res.data.description);
                 id = res.data.id;
                 $('#product-modal').modal('show');
